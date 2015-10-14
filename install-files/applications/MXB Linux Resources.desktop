@@ -1,0 +1,8 @@
+[Desktop Entry]
+Comment=Opens online MXB Linux Folder
+Terminal=false
+Name=MXB Linux Resources
+Exec=firefox https://drive.google.com/a/sil.org/folderview?id=0B14fK2gboEVYfkR4REtOTjE4Z1VIVzhUQ0hMcEFlQU9fdGk2cjlLSkMwazFaMDBqVXU4V3M&usp=sharing
+Type=Application
+Icon=cinnamon-preferences-color
+Categories=Education;

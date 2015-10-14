@@ -1,0 +1,93 @@
+//
+// ┌─────┐
+// │ 2 4 │   2 = Shift,  4 = Level3 + Shift
+// │ 1 3 │   1 = Normal, 3 = Level3
+// └─────┘
+// ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
+// │ ° ¬ │ ! ¡ │ " ⅛ │ # £ │ $ $ │ % ⅜ │ & ⅝ │ / ⅞ │ ( ̇™ │ ) ± │ = ° │ ? ' │ ¡ ˛ ┃ ⌫ Back- ┃
+// │ | ¬ │ 1 ¹ │ 2 ² │ 3 ³ │ 4 ¼ │ 5 ½ │ 6 ¬ │ 7 { │ 8 [ │ 9 ] │ 0 } │ ꞌ \ │ ¿ ¸ ┃  space  ┃
+// ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
+// ┃       ┃ Q Ω │ W Ł │ E ¢ │ R ® │ T Ɨ │ Y ¥ │ U Ʉ │ I Ɨ │ O Ø │ P Þ │ " ° │ * ~ ┃ Enter ┃
+// ┃Tab ↹  ┃ q @ │ w ł │ e € │ r ¶ │ t ɨ │ y ← │ u ʉ │ i ɨ │ o ø │ p þ │ ' ¨ │ + ~ ┃   ⏎   ┃
+// ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
+// ┃        ┃ A Æ │ S § │ D Ð │ F ª │ G Ŋ │ H Ħ │ J Ʉ │ K & │ L Ł │ Ñ ˝ │ [ Ꞌ │ ] ˘ ┃      ┃
+// ┃Caps ⇬  ┃ a æ │ s ß │ d ð │ f đ │ g ŋ │ h ħ │ j ʉ │ k ĸ │ l ł │ ñ ~ │ { ^ │ } ` ┃      ┃
+// ┣━━━━━━━━┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━┫
+// ┃             │ Z < │ X > │ C © │ V ‘ │ B ’ │ N N │ M º │ ; × │ : ˙ │ _ ~ ┃             ┃
+// ┃Shift ⇧      │ z « │ x » │ c ¢ │ v “ │ b ” │ n n │ m µ │ ,   │ . ̣  │ - ¯ ┃Shift ⇧      ┃
+// ┣━━━━━━━┳━━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━━┛
+// ┃       ┃       ┃       ┃ ␣                               ⍽ ┃       ┃       ┃       ┃
+// ┃Ctrl   ┃Meta   ┃Alt    ┃ ␣           Space               ⍽ ┃AltGr ⇮┃Menu   ┃Ctrl   ┃
+// ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
+
+partial default alphanumeric_keys modifier_keys 
+xkb_symbols "basic" {
+
+   include "latam"
+
+
+    name[Group1]= "Español 1 (MXB)";
+
+   key <TLDE>	{ [       bar,     degree,      notsign,      notsign ]	};
+
+    key <AE01>	{ [         1,     exclam,  onesuperior,   exclamdown ]	};
+    key <AE02>	{ [         2,     quotedbl,  twosuperior,  oneeighth ]	};
+    key <AE03>	{ [         3, numbersign, threesuperior,    sterling ]	};
+    key <AE04>	{ [         4,     dollar,   onequarter,       dollar ]	};
+    key <AE05>	{ [         5,    percent,      onehalf, threeeighths ]	};
+    key <AE06>	{ [         6,  ampersand,      notsign,  fiveeighths ]	};
+    key <AE07>	{ [         7,      slash,    braceleft, seveneighths ]	};
+    key <AE08>	{ [         8,  parenleft,  bracketleft,    trademark ]	};
+    key <AE09>	{ [         9, parenright, bracketright,    plusminus ]	};
+    key <AE10>	{ [         0,      equal,   braceright,       degree ]	};
+    key <AE11>	{ [       UA78C,   question,    backslash, apostrophe ]	};  // lower case saltillo on apostrophe
+    key <AE12>	{ [questiondown, exclamdown, dead_cedilla, dead_ogonek]	};
+
+    key <AD01>	{ [         q,          Q,           at,  Greek_OMEGA ]	};
+    key <AD02>	{ [         w,          W,      lstroke,      Lstroke ]	};
+    key <AD03>	{ [         e,          E,     EuroSign,         cent ]	};
+    key <AD04>	{ [         r,          R,    paragraph,   registered ]	};
+    key <AD05>  { [         t,          T,    U0268,       U0197      ] };  //Barred i on the T key
+    key <AD06>	{ [         y,          Y,    leftarrow,          yen ]	};
+    key <AD07>  { [         u,          U,   U0289,        U0244      ] };  //Barred U on the U key
+    key <AD08>	{ [         i,          I,   U0268,       U0197      ]	};  //Barred i on the I key
+
+    key <AD09>	{ [         o,          O,       oslash,     Ooblique ]	};
+    key <AD10>	{ [         p,          P,        thorn,        THORN ]	};
+    key <AD11>	{ [dead_acute, dead_diaeresis, U00A8, dead_abovering ]	};
+    key <AD12>	{ [      plus,   asterisk,   asciitilde,  dead_tilde ]	};
+
+    key <AC01>	{ [         a,          A,           ae,           AE ]	};
+    key <AC02>	{ [         s,          S,       ssharp,      section ]	};
+    key <AC03>	{ [         d,          D,          eth,          ETH ]	};
+    key <AC04>	{ [         f,          F,      dstroke,  ordfeminine ]	};
+    key <AC05>	{ [         g,          G,          eng,          ENG ]	};
+    key <AC06>	{ [         h,          H,      hstroke,      Hstroke ]	};
+    key <AC07>  { [         j,          J,        U0289,        U0244 ] };  //Barred U on the J key
+    key <AC08>	{ [         k,          K,          kra,    ampersand ]	};
+    key <AC09>	{ [         l,          L,      lstroke,      Lstroke ]	};
+    key <AC10>	{ [    ntilde,     Ntilde,    u0303, dead_doubleacute ] };  // U0303 Combining Tilde
+    key <AC11>	{ [ braceleft, bracketleft, dead_circumflex, UA78B]	}; // capital saltillo on capital circumflex
+
+ 
+    key <BKSL>	{ [braceright, bracketright, dead_grave,   dead_breve ]	};
+    key <LSGT>  { [     less, greater, guillemotleft, guillemotright  ] };
+
+    key <AB01>	{ [         z,          Z, guillemotleft,        less ]	};
+    key <AB02>	{ [         x,          X, guillemotright,    greater ]	};
+    key <AB03>	{ [         c,          C,         cent,    copyright ]	};
+    key <AB04>	{ [         v,          V, leftdoublequotemark, leftsinglequotemark ]	};
+    key <AB05>	{ [         b,          B, rightdoublequotemark, rightsinglequotemark ] };
+    key <AB06>	{ [         n,          N,            n,            N ]	};
+    key <AB07>	{ [         m,          M,           mu,    masculine ]	};
+    key <AB08>	{ [   comma,  semicolon, horizconnector,     multiply ]	};
+    key <AB09>	{ [  period,      colon, dead_belowdot,     dead_abovedot ]	};
+    key <AB10>	{ [   minus, underscore, dead_macron,  dead_tilde ]	};
+
+
+    include "level3(ralt_switch)"
+
+};
+
+
+

@@ -1,0 +1,12 @@
+Source: wasta-custom-mxb
+Section: utils
+Priority: optional
+Maintainer: Rik Shaw <rikshaw76@gmail.com>
+Build-Depends: debhelper (>= 9.0.0)
+Standards-Version: 3.9.5
+
+Package: wasta-custom-mxb
+Architecture: any
+Depends: wasta-base-setup, ${shlibs:Depends}, ${misc:Depends}
+Description: Wasta-Linux Mexico customization
+ Sets up Wasta-Linux machine for use in Mexico Branch

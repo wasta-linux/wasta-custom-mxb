@@ -1,0 +1,7 @@
+install-files/applications          usr/share
+install-files/fonts                 usr/share
+install-files/gschema-overrides/*   usr/share/glib-2.0/schemas
+install-files/kmfl                  usr/share
+install-files/symbols               usr/share/X11/xkb
+install-files/wasta-resources       usr/share
+wasta-custom-mxb                    usr/share

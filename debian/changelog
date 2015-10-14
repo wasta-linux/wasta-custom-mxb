@@ -1,0 +1,23 @@
+wasta-custom-mxb (1.0.0) trusty; urgency=medium
+
+  * Initial GitHub / Launchpad commit.
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Wed, 14 Oct 2015 16:20:11 +0300
+
+wasta-custom-mxb (0.1.1) trusty; urgency=medium
+
+  * install-files/fonts: added
+  * install-files/applications: MXB Linux Resources application added
+  * install-files/bin: spot for new executable added
+  * install-files/gschema-overrides: use for default dconf settings changes
+  * install-files/symbols: added for xkb keyboards
+  * install-files/wasta-resources: added for keyboarding files or other
+    reference materials.
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Sat, 19 Sep 2015 15:52:06 +0300
+
+wasta-custom-mxb (0.1.0) trusty; urgency=low
+
+  * Initial Release.
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Mon, 14 Sep 2015 17:51:20 +0300
